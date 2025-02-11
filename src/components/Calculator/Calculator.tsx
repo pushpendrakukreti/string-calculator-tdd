@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Calculator.scss";
 import add from "./utils/StringCalculator";
 
 const Calculator: React.FC = () => {
