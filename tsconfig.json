@@ -1,9 +1,19 @@
 {
   "compilerOptions": {
-    "types": ["vite/client", "jest", "node"],
-    "jsx": "react-jsx",
+    "target": "ESNext",
+    "module": "ESNext", // Use ESNext for modules
+    "moduleResolution": "Node", // Use Node for module resolution
+    "strict": true,
     "esModuleInterop": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true
-  }
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "types": ["vite/client", "jest", "node"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
