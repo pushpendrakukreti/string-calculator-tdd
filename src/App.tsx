@@ -1,11 +1,12 @@
-import './App.css'
+import React from "react";
+import Calculator from "./components/Calculator/Calculator";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div>
-      Initial Commit      
+      <Calculator />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
