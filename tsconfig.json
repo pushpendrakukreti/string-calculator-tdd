@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["vite/client", "jest", "node"],
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "moduleResolution": "node",
