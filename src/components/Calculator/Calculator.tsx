@@ -19,10 +19,15 @@ const Calculator: React.FC = () => {
             const sum = add(input);
             setResult(sum);
         } catch (err) {
-            setError(err.message);
+            if (err instanceof Error) {
+                setError(err.message);
+            } else {
+                setError("An unknown error occurred");
+            }
             setResult(null);
         }
     };
+    
 
     return (
         <div className="container">
